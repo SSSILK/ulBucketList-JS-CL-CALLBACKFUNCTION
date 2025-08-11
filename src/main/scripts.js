@@ -21,25 +21,26 @@ last.
 // This is an IIFE, "Immediately Invoked Function Expression" a function which is called as soon as it is defined. 
 // Start here, this will call itself when the page loads.
 (function start() {
-    setTimeout(placeholder, 1000);
+    setTimeout(toBe, 1000);
 })();
 
-// Callback function 1
-function friendsRomansCountrymen() {
-    opening.innerText += 'Friends, Romans, Countrymen, ';
-    setTimeout(placeholder, 1000);
-}
 
 // Callback function 2
 function toBe() {
     opening.textContent += 'To be, ';
-    setTimeout(placeholder, 1000);
+    setTimeout(orNotToBe, 1000);
+}
+
+// Callback function 5
+function orNotToBe() {
+    opening.textContent += 'or not to be, ';
+    setTimeout(thatIsTheQuestion, 1000);
 }
 
 // Callback function 3
 function thatIsTheQuestion() {
     opening.textContent += 'that is the question: ';
-    setTimeout(placeholder, 1000);
+    setTimeout(finishSpeech, 1000);
 }
 
 // Callback function 4
@@ -48,11 +49,7 @@ function myKingdomForAHorse() {
     setTimeout(placeholder, 1000);
 }
 
-// Callback function 5
-function orNotToBe() {
-    opening.textContent += 'or not to be, ';
-    setTimeout(placeholder, 1000);
-}
+
 
 // Callback function 6
 function placeholder() {
